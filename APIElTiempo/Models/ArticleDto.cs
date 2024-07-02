@@ -9,7 +9,9 @@
         public string AuthorName { get; set; }
         public DateTime CreatedAt { get; set; }
         public DateTime UpdatedAt { get; set; }
-        public ICollection<ArticleImageDto> ArticleImages { get; set; }
+        public ICollection<ArticleImageDto> ArticleImages { get; set; } // Lista de imágenes asociadas al artículo
+        public string ImageUrl { get; set; } // URL de una imagen asociada al artículo
 
+        public IFormFile File { get; set; } // Propiedad para el archivo multimedia
     }
 }

@@ -1,9 +1,11 @@
-﻿using static APIElTiempo.Models.Users;
+﻿using System.ComponentModel.DataAnnotations;
+using static APIElTiempo.Models.Users;
 
 namespace APIElTiempo.Models
 {
     public class Article
     {
+        [Key]
         public int ArticleId { get; set; }
         public string Title { get; set; }
         public string Content { get; set; }
